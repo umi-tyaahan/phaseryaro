@@ -1,0 +1,93 @@
+metadata:
+  name: 'phaser やろー'
+  short_name: phaseryaro
+  description: 'ゲーム開発フレームワークPhaserでの、ゲームを制作に関わる情報をまとめたサイトです。マルチプラットフォーム対応のHTML5ゲームを作ります。'
+  language: ja
+  url: 'https://phaseryaro.app.dev'
+  pathPrefix: /
+  gaTrackingId: null
+  favicon: /assets/favicon.png
+  themeColor: '#0066cc'
+header:
+  enabled: true
+  logo: /assets/logo.png
+  logoLink: "/"
+  links:
+    - text: 'Phaserでのゲーム制作に関わる情報をまとめたサイトです'
+      link: text
+sidebar:
+  ignoreIndex: false
+  forcedNavOrder: []
+  expanded: []
+  groups:
+    - order: 1
+      path: "/gettingstarted"
+      title: ":rocket: Getting Started"
+    - order: 2
+      path: "/configuration"
+      title: ":wrench: Configuration"
+    - order: 99
+      path: "/Others"
+      title: ":wrench: その他"
+  links:
+    - text: Phaser
+      link: https://phaser.io/
+    - text: Examples
+      link: https://labs.phaser.io/
+    - text: API Documents
+      link: https://photonstorm.github.io/phaser3-docs/
+    - text: Boogi
+      link: https://boogi.netlify.app/
+  poweredBy: {}
+  enabled: true
+pwa:
+  enabled: true
+  manifest:
+    icon: /assets/logo.png
+    display: minimal-ui
+    crossOrigin: anonymous
+features:
+  editOnRepo:
+    editable: false
+    location: 'http://localhost'
+    type: github
+  pageProgress:
+    enabled: true
+    includePaths:
+      - "/configuration/gettingstarted"
+      - regex: "^/syntax"
+    excludePaths:
+      - "/"
+      - regex: "^/anything"
+    height: 3
+    prependToBody: false
+    color: "#A05EB5"
+  search:
+    enabled: false
+    indexName: docs
+    showStats: true
+    pagination:
+      enabled: true
+  previousNext:
+    enabled: true
+    arrowKeyNavigation: true
+  features:
+    scrollTop: true
+  toc:
+    show: true
+    depth: 3
+  fullScreenMode:
+    enabled: true
+    hideHeader: true
+    hideSidebar: true
+    hideToc: true
+  darkMode:
+    enabled: true
+    default: false
+  rss:
+    enabled: false
+social:
+  github: 'https://github.com/umi-tyaahan'
+  twitter: 'https://twitter.com/umityaahan'
+search:
+  enabled: false
