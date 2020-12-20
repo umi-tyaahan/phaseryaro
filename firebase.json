@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": ".boogi/v1.0.1/public",
     "ignore": [
       "firebase.json",
       "**/.*",
