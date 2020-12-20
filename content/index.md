@@ -2,7 +2,7 @@
 title: 'Phaserでゲーム制作やろー'
 ---
 
-:wave: hello3!
+:wave: hello4!
 
 このサイトは、HTML5ゲーム開発フレームワーク:rocket:Phaserでの、ゲーム制作に関わる情報をまとめたサイトです。  
 Phaserで、マルチプラットフォーム対応のHTML5ゲームを作りましょう。

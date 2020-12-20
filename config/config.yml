@@ -5,8 +5,8 @@ metadata:
   language: ja
   url: 'https://phaseryaro.app.dev'
   pathPrefix: /
-  gaTrackingId: null
-  favicon: /assets/favicon.png
+  gaTrackingId: G-8DE6GCWPFG
+  favicon: /assets/logo.svg
   themeColor: '#0066cc'
 header:
   enabled: true
@@ -43,7 +43,7 @@ sidebar:
 pwa:
   enabled: true
   manifest:
-    icon: /assets/logo.png
+    icon: /assets/logo.svg
     display: minimal-ui
     crossOrigin: anonymous
 features:

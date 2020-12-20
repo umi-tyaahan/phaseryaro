@@ -6,9 +6,9 @@ module.exports = {
         "language": "ja",
         "url": "https://phaseryaro.app.dev",
         "pathPrefix": "/",
-        "gaTrackingId": null,
+        "gaTrackingId": "G-8DE6GCWPFG",
         "siteImage": null,
-        "favicon": "/assets/favicon.png",
+        "favicon": "/assets/logo.svg",
         "themeColor": "#0066cc"
     },
     "header": {
@@ -74,7 +74,7 @@ module.exports = {
             "theme_color": "#6b37bf",
             "display": "minimal-ui",
             "crossOrigin": "anonymous",
-            "icon": "static/assets/logo.png",
+            "icon": "static/assets/logo.svg",
             "description": "ゲーム開発フレームワークPhaserでの、ゲームを制作に関わる情報をまとめたサイトです。マルチプラットフォーム対応のHTML5ゲームを作ります。",
             "cache_busting_mode": "none",
             "include_favicon": false,
