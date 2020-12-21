@@ -68,7 +68,7 @@ const Navigation = styled(({ className, links }) => {
       transform: scaleX(1);
     }
     a {
-      font-family: 'Roboto';
+      font-family: 'Kosugi','Roboto';
       position: relative;
       color: ${(props) => props.theme.header.font.base};
       font-size: 16px;

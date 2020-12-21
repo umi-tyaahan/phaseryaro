@@ -1,3 +1,5 @@
+import 'fontsource-kosugi'
+
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
     `This tutorial has been updated. ` + `Reload to display the latest version?`

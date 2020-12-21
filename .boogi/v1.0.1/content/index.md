@@ -1,15 +1,19 @@
 ---
-title: 'Phaserでゲーム制作やろー'
+title: 'Phaserでゲーム制作やろー！'
 ---
 
-:wave: hello3!
+:wave: こんにちは！  
+Phaserで、マルチプラットフォーム対応のHTML5ゲームを作ろー！
 
-このサイトは、HTML5ゲーム開発フレームワーク:rocket:Phaserでの、ゲーム制作に関わる情報をまとめたサイトです。  
-Phaserで、マルチプラットフォーム対応のHTML5ゲームを作りましょう。
+このサイトは、HTML5ゲーム開発フレームワーク:rocket:[Phaser](https://phaser.io/)の、ゲーム制作に関わる情報をまとめたサイトです。  
+主に、Phaserでのゲーム演出とその実装についてまとめています。  
 
-このサイトは立ち上げ中です。  
-書きたい項目から書いています。
+なお、今はサイトの構築中です:grin:  
+まずは地道に記事を増やさないと・・・:sheep: 
 
+[$card](https://github.com/JaeYeopHan/gatsby-remark-link-card)
+
+<!-- 
 # Phaserとは
 
 Phaserを使ったこと無い人向けのページです
@@ -31,4 +35,4 @@ Phaser初心者が最初に読むべきページ「導入から、使い方ま�
 
 「Phaserを０から全て知りつくしたい！」という人向けのページです。
 
-
+ -->

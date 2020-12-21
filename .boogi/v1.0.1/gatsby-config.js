@@ -13,8 +13,8 @@ configManager.generate(__dirname + '/.generated.config.js', config);
 const plugins = [
   'gatsby-plugin-loadable-components-ssr',
   'gatsby-plugin-sitemap',
-  'gatsby-plugin-instagram-embed',
-  'gatsby-plugin-pinterest',
+  // 'gatsby-plugin-instagram-embed',
+  // 'gatsby-plugin-pinterest',
   'gatsby-plugin-twitter',
   'gatsby-plugin-sharp',
   'gatsby-plugin-sass',
@@ -61,25 +61,25 @@ const plugins = [
     options: {
       remarkPlugins: [require('remark-emoji'), require('remark-abbr')],
       gatsbyRemarkPlugins: [
-        {
-          resolve: 'gatsby-remark-mermaid',
-          options: {
-            language: config.features.mermaid.language,
-            theme: config.features.mermaid.theme,
-            viewport: {
-              width: config.features.mermaid.width,
-              height: config.features.mermaid.height,
-            },
-            mermaidOptions: config.features.mermaid.options,
-          },
-        },
-        'gatsby-remark-graphviz',
-        {
-          resolve: require.resolve(`./plugins/gatsby-remark-sectionize-toc`),
-          options: {
-            maxDepth: config.features.toc.depth,
-          },
-        },
+        // {
+        //   resolve: 'gatsby-remark-mermaid',
+        //   options: {
+        //     language: config.features.mermaid.language,
+        //     theme: config.features.mermaid.theme,
+        //     viewport: {
+        //       width: config.features.mermaid.width,
+        //       height: config.features.mermaid.height,
+        //     },
+        //     mermaidOptions: config.features.mermaid.options,
+        //   },
+        // },
+        // 'gatsby-remark-graphviz',
+        // {
+        //   resolve: require.resolve(`./plugins/gatsby-remark-sectionize-toc`),
+        //   options: {
+        //     maxDepth: config.features.toc.depth,
+        //   },
+        // },
         {
           resolve: 'gatsby-remark-images',
           options: {

@@ -56,7 +56,7 @@ const ContentTreeGroup = styled(({ className, treeState, title, icon, location, 
   span {
     padding: 5px 16px;
     font-size: 13px;
-    font-family: Content-font, Roboto, sans-serif;
+    font-family: Kosugi, Content-font, Roboto, sans-serif;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1.2px;

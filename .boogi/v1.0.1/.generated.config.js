@@ -1,6 +1,6 @@
 module.exports = {
     "metadata": {
-        "name": "phaser やろー",
+        "name": "PhaserYaro!",
         "short_name": "phaseryaro",
         "description": "ゲーム開発フレームワークPhaserでの、ゲームを制作に関わる情報をまとめたサイトです。マルチプラットフォーム対応のHTML5ゲームを作ります。",
         "language": "ja",
@@ -31,13 +31,33 @@ module.exports = {
         "groups": [
             {
                 "order": 1,
-                "path": "/gettingstarted",
-                "title": ":rocket: Getting Started"
+                "path": "/whatsnew",
+                "title": ":rocket: 最近のネタ"
             },
             {
-                "order": 2,
-                "path": "/configuration",
-                "title": ":wrench: Configuration"
+                "order": 10,
+                "path": "/nyumon",
+                "title": ":mortar_board: Phaser入門"
+            },
+            {
+                "order": 20,
+                "path": "/effects",
+                "title": ":flower_playing_cards: ゲーム演出"
+            },
+            {
+                "order": 30,
+                "path": "/assets",
+                "title": ":art: ゲーム素材"
+            },
+            {
+                "order": 40,
+                "path": "/Implementation",
+                "title": ":joystick: ゲーム実装"
+            },
+            {
+                "order": 50,
+                "path": "/design",
+                "title": ":space_invader: ゲームデザイン"
             },
             {
                 "order": 99,
