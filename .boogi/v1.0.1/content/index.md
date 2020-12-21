@@ -11,8 +11,6 @@ Phaserで、マルチプラットフォーム対応のHTML5ゲームを作ろー
 なお、今はサイトの構築中です:grin:  
 まずは地道に記事を増やさないと・・・:sheep: 
 
-[$card](https://github.com/JaeYeopHan/gatsby-remark-link-card)
-
 <!-- 
 # Phaserとは
 
