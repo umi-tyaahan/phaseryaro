@@ -161,20 +161,16 @@ module.exports = {
         "showMetadata": true,
         "propagateNetlifyEnv": true,
         "pageProgress": {
-            "enabled": true,
+            "enabled": false,
             "excludePaths": [
-                "/",
-                {
-                    "regex": "^/anything"
-                }
+                "/"
             ],
             "height": 3,
             "prependToBody": false,
             "color": "#A05EB5",
             "includePaths": [
-                "/configuration/gettingstarted",
                 {
-                    "regex": "^/syntax"
+                    "regex": "^/"
                 }
             ]
         },
@@ -211,9 +207,6 @@ module.exports = {
             "hideHeader": true,
             "hideToc": true,
             "hideSidebar": true
-        },
-        "features": {
-            "scrollTop": true
         }
     },
     "search": {

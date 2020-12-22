@@ -24,7 +24,17 @@ const plugins = [
       component: require.resolve(`./src/templates/docs.js`),
     },
   },
-  'gatsby-plugin-emotion',
+  {
+    resolve: `gatsby-plugin-emotion`,
+    options: {
+      // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
+      // The values for each key in this example are the defaults the plugin uses.
+      sourceMap: true,
+      autoLabel: "dev-only",
+      labelFormat: `[local]`,
+      cssPropOptimization: true,
+    },
+  },
   'gatsby-plugin-remove-trailing-slashes',
   {
     resolve: require.resolve(`./plugins/gatsby-plugin-draft`),
@@ -84,8 +94,9 @@ const plugins = [
           resolve: 'gatsby-remark-images',
           options: {
             maxWidth: 1050,
+            linkImagesToOriginal:false,
             quality: 75,
-            showCaptions: true,
+            showCaptions: false,
             disableBgImageOnAlpha: true,
             withWebp: true,
           },

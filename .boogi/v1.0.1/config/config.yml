@@ -64,13 +64,9 @@ features:
     location: 'http://localhost'
     type: github
   pageProgress:
-    enabled: true
+    enabled: false
     includePaths:
-      - "/configuration/gettingstarted"
-      - regex: "^/syntax"
-    excludePaths:
-      - "/"
-      - regex: "^/anything"
+      - regex: "^/"
     height: 3
     prependToBody: false
     color: "#A05EB5"
@@ -83,8 +79,8 @@ features:
   previousNext:
     enabled: true
     arrowKeyNavigation: true
-  features:
-    scrollTop: true
+  scrollTop: true
+  showMetadata: true
   toc:
     show: true
     depth: 3
