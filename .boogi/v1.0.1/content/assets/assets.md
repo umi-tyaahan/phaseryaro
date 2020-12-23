@@ -13,8 +13,11 @@ Phaserでは、アセットが全く無いため、ゲーム素材を集める�
 
 - 自分で作る
   - ツールの紹介(texturepacker,freetexturepacker)
+  - web公開の場合細かいファイルを沢山ロードすると失敗する恐れがあるため、packingすると良い
 - 素材の探し方
 - 画像
 - 音楽(BGM/ジングル)
+  - Audiosprite構築
+    - 若干不安
 - 国内/海外
 
