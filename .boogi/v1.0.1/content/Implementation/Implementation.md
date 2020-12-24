@@ -15,3 +15,5 @@ title: 'ゲームの実装:hammer_and_pick:'
 - イメージボード(画面設計)からの実装
   - 画面レイアウト
 - novelgamesystemの実装
+
+- ExamplesのGamesの参考
