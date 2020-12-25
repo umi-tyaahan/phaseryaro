@@ -3,7 +3,8 @@ title: '公式サイトの使い方'
 order: 20
 ---
 
-公式サイトはこれです。http://phaser.io/
+公式サイトはこちら！  
+:rocket: http://phaser.io/
 
 Phaserは長い間VersionUPを繰り返してきており、  
 それに合わせて、公式サイトにもかなりの情報が集まっています。
@@ -23,8 +24,9 @@ Phaserは長い間VersionUPを繰り返してきており、
 - download
   - Phaser本体のDownloadに関するものがあります[^1]
     - 直接ここからDLするよりも、チュートリアル通りに進めたほうが良いと思います
-  - ロゴ画像の取得
-  - ライセンスやバグの報告方法など
+  - 最上部の、`Download Phaser from GitHub`より更に深い項目が表示されます
+    - ロゴ画像の取得
+    - ライセンスやバグの報告方法など
 - examples<Badge color="red">重要</Badge>
   - フレームワークの機能が実際に試せます
     - 若干表示が重いです。可能なら[Labo](http://labs.phaser.io/index.html)の方を見たほうが良いでしょう
@@ -50,5 +52,19 @@ Communityページで、Phaser3に絞り込んで検索すると良いかも知�
 downloadにあるTipの記事は、特定の機能への理解を深めることができるチャンスです。  
 Examplesで単機能のサンプルを見ていても、応用の仕方が思いつかない場合があるためです。
 
+# Advance！
+ある程度コーディングの経験のあるソフトウェア開発者ですか？  
+PhaserのGitHubリポジトリのReadme.mdには開発者向けの情報が多く記載されています。
+
+https://github.com/photonstorm/phaser
+
+- チュートリアルとガイドへの案内
+- TypeScript向け情報<Badge color="red">重要</Badge>
+- カスタムビルド方法
+- バグ報告など、Contributing方法の説明[^2]
+
+是非チェックしてみて下さい。
 
   [^1]: 最近の開発コードがsubaruとかremuとなってますが、これは[リゼロ](http://re-zero-anime.jp/tv/)か？🤔
+
+  [^2]: この間初めてプルリクを送りました😁緊張するぜ！
