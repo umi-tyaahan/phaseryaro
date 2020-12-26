@@ -1,5 +1,5 @@
 ---
-title: 'Examplesの使い方２'
+title: 'Examplesの分類'
 order: 2
 showToc: true
 tocDepth: 3
@@ -12,7 +12,7 @@ tocDepth: 3
 - Audio / 音声に関するもの
 - Bugs / 既知のバグ検証用
 - Cache / json,text,xmlのロード
-- Camera / :hammer_and_pick:
+- Camera / カメラを利用したエフェクト
 - Components / GameObject自体にデータを持たせる例
 - DemoScene / 様々なゲームデモ
 - DepthSorting / GameObjectの画面上の前後関係

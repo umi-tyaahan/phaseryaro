@@ -148,14 +148,19 @@ export default class MDXRuntimeTest extends React.Component {
             <div css={{ display: 'block' }}>
               {mdx.parent.fields ? (
                 <LastUpdated
-                  time={mdx.parent.fields.gitLogLatestDate}
-                  name={mdx.parent.fields.gitLogLatestAuthorName}
+                  // time={mdx.parent.fields.gitLogLatestDate}
+                  time={mdx.parent.modifiedTime}
+                  // name={mdx.parent.fields.gitLogLatestAuthorName}
+                  name="管理人"
                   email={mdx.parent.fields.gitLogLatestAuthorEmail}
                 />
               ) : (
-                ''
+                <LastUpdated
+                  time={mdx.parent.modifiedTime}
+                  name="管理人"
+                />
               )}
-              <ReadingTime time={mdx.timeToRead * 2} />
+              {/* <ReadingTime time={mdx.timeToRead * 2} /> */}
             </div>
           ) : (
             ''
@@ -205,6 +210,7 @@ export const pageQuery = graphql`
             gitLogLatestAuthorEmail
             gitLogLatestDate(fromNow: true)
           }
+          modifiedTime(formatString: "YYYY/MM/DD")
         }
       }
       frontmatter {

@@ -54,6 +54,8 @@ Phaserでのスプライトアニメーション利用方法
   - anims.staggerPlayの例
 
 ## 技術デモ
+以下は応用的な使い方をしているExampleです
+
 - Cubes
   - scene.anims.staggerPlayでGroupへのアニメーション開始遅延命令
 - Muybridge

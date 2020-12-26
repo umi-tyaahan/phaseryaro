@@ -15,7 +15,7 @@ http://labs.phaser.io/index.html?dir=audio
   - 基本的な操作のみ行えるのはHtml5 Audioクラス
   - 無音声時に呼ばれるのがNo Audioクラス
 
-何も考えず高機能なWeb Audio使えば良いのだろうか？🤔:hammer_and_pick:
+ゲーム制作時には、とにかく高機能なWeb Audio使えば良いのだろうか？🤔:hammer_and_pick:
 
 # 項目
 
@@ -45,6 +45,8 @@ http://labs.phaser.io/index.html?dir=audio
   - Guiを利用
 
 ## 技術デモ<Badge color="red">難しい</Badge>
+応用的な使い方をしている例です
+
 - Basic Playback and Events
   - いろいろな音声再生機能をイベントを呼び出す
 - Loop Delay

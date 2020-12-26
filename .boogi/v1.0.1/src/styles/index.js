@@ -40,7 +40,7 @@ export const blockquote = (theme) => css`
   font-size: 1.4em;
   width: 100%;
   margin: 30px auto;
-  font-style: italic;
+  // font-style: italic;
   color: ${theme.colors.font};
   padding: 14px 25px 14px 75px;
   border-left: 8px solid ${theme.colors.primary};
@@ -51,10 +51,10 @@ export const blockquote = (theme) => css`
   &::before {
     content: '\\201C';
     color: ${theme.colors.primary};
-    font-size: 4em;
+    font-size: 2em;
     position: absolute;
     left: 10px;
-    top: -13px;
+    // top: -13px;
   }
 
   &::after {

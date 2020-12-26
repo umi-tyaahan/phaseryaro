@@ -1,5 +1,5 @@
 ---
-title: 'Examplesの使い方１'
+title: 'Examplesの使い方'
 order: 1
 showToc: true
 tocDepth: 3
@@ -29,17 +29,52 @@ Phaser公式サイト内のExamplesとラボ(http://labs.phaser.io/)のExamples�
 
 <LinkCard title="ローカルでExampleを見る方法はこちら" url="/nyumon/devenv/buildlocalexamples" />
 
-# サイトの使い方
-
-:hammer_and_pick:
+# サイトの使い方:hammer_and_pick:
 
 - サムネイルが似ているものは、近い機能の説明となっている
 例えばランスロット
 
+# LiveCording用インターフェイス
+
+Exampleの個別のページ下部にはLiveCording等が行えるインターフェイスが付いています。  
+（一部のExampleには無いものもあります）
+
+![IF](IF.png)
+
+- Back : 前の画面に戻る
+- Edit : LiveCording画面の表示
+- Open Issue : [Phaser公式のExamplesのIssue](https://github.com/photonstorm/phaser3-examples/pulls)を表示します
+- iFrame : iFrameでゲームエリアを表示
+  - div : divでゲームエリアを表示
+- 100% : 画面いっぱいに表示
+- Dev Build : Phaser本体の実行バージョンを変えます
+  - 新しい機能の場合、古いバージョンは動かないことが多いです
+- Labs : ？
+- Mobile : モバイル用表示
+  - Chromeの開発者用ツールでモバイル画面サイズで確認すると良さそうです
+
+![ChromeDevelopmentTools](ChromeDev.png)
+
+Chrome開発者用ツールの簡単な使い方
+- Chrome起動中にF12キーを押す
+- デバッグ画面が開くので左上のスマフォボタンを押す
+- スマフォ表示に切り替わる。
+  - 必要に応じて、機種の選択・画面回転などを行う
+
+# GUI付きExample
+
+Exampleの中には、ゲーム画面に下記のようなGUI付きのものがあります。  
+Exampleで注目すべき項目のパラメーターを、リアルタイムで変更できます。
+
+![GUI](GUI.png)
+
 # コードの読み解き方のヒント
 
+ソースコードが長いExampleは、注目すべき実装がどこにあるか分からなくなります。  
+コードを読む時のいくつかのヒントを記載します。
+
 ## クリックイベントに着目する
-クリックして変化するExamplsは、  
+クリックして変化するExamplは、  
 以下のような`pointerdown`イベントから読み解いていくとコードが追いやすい。
 
 ```js
