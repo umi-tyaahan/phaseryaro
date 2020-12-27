@@ -10,6 +10,5 @@ order: 1
 - Cocos2DX
 - Unity
 - UnrealEngine
-- RPGMaker MV
-- RPGMaker MZ
-
+- RPGMaker MV / MZ
+- GameMaker Studio2

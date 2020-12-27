@@ -8,6 +8,7 @@ metadata:
   gaTrackingId: G-8DE6GCWPFG
   favicon: /assets/logo.svg
   themeColor: '#0066cc'
+  siteImage: /assets/logo.png
 header:
   enabled: true
   logo: /assets/logo.png
