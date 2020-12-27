@@ -53,7 +53,7 @@ sidebar:
   poweredBy: {}
   enabled: true
 pwa:
-  enabled: true
+  enabled: false
   manifest:
     icon: /assets/logo.svg
     display: minimal-ui

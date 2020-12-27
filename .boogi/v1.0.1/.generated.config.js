@@ -86,6 +86,7 @@ module.exports = {
         "poweredBy": {}
     },
     "pwa": {
+        "enabled": false,
         "manifest": {
             "name": "BooGi",
             "short_name": "BooGi",
@@ -94,13 +95,8 @@ module.exports = {
             "theme_color": "#6b37bf",
             "display": "minimal-ui",
             "crossOrigin": "anonymous",
-            "icon": "static/assets/logo.svg",
-            "description": "ゲーム開発フレームワークPhaserでの、ゲームを制作に関わる情報をまとめたサイトです。マルチプラットフォーム対応のHTML5ゲームを作ります。",
-            "cache_busting_mode": "none",
-            "include_favicon": false,
-            "lang": "ja"
-        },
-        "enabled": true
+            "icon": "/assets/logo.svg"
+        }
     },
     "social": {
         "facebook": "",

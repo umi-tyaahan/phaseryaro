@@ -1,5 +1,5 @@
 ---
-title: 'よくある画面効果'
+title: 'よくある画面効果:hammer_and_pick:'
 order: 2
 showToc: true
 tocDepth: 3

@@ -10,4 +10,6 @@ title: 'ゲームの設計:hammer_and_pick:'
 
 - コンセプトの検討
   - 面白さの説明
+- narrativeと物語論
+- 学習曲線
 

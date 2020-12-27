@@ -263,7 +263,6 @@ if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
       appendScript: require.resolve(`./src/custom-sw-code.js`),
     },
   });
-  // plugins.push('gatsby-plugin-offline');
 } else {
   plugins.push('gatsby-plugin-remove-serviceworker');
 }

@@ -1,5 +1,5 @@
 ---
-title: 'アンダーテイルの文字震え'
+title: 'アンダーテイルの文字震え:hammer_and_pick:'
 order: 2
 showToc: true
 tocDepth: 3

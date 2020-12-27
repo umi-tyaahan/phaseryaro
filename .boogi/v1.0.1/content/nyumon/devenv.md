@@ -11,3 +11,9 @@ order: 10
 - typescript
 - gitへのリンク
 - mobile対応
+
+- deploy / hosting
+  - github
+  - firebase
+  - itch.io
+  - steam

@@ -3,7 +3,7 @@ module.exports = {
     name: 'BooGi',
     short_name: 'BooGi',
     description: '',
-    language: 'en',
+    language: 'ja',
     url: 'http://localhost',
     pathPrefix: '/',
     gaTrackingId: null,

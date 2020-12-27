@@ -6,7 +6,7 @@ import { scrollbar } from './styles';
 export default class HTML extends React.Component {
   render() {
     return (
-      <html {...this.props.htmlAttributes} lang="ja">
+      <html {...this.props.htmlAttributes} lang={config.metadata.language}>
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />

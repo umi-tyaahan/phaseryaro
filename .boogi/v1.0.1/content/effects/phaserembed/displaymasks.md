@@ -1,5 +1,5 @@
 ---
-title: '画面へのマスク演出全般（仮'
+title: '画面へのマスク演出全般:hammer_and_pick:'
 order: 4
 showToc: true
 tocDepth: 3
