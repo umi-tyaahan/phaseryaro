@@ -1,5 +1,6 @@
 ---
-title: 'ゲームの実装:hammer_and_pick:'
+title: "ゲームの実装:hammer_and_pick:"
+order: 1
 ---
 
 ゲームの実装についてです。
@@ -10,16 +11,16 @@ title: 'ゲームの実装:hammer_and_pick:'
 (作成中)
 
 - 既存のシステムの流用とカスタマイズ
-- PhaserPluginの活用
-  - rex pluginの活用
+- PhaserPlugin の活用
+  - rex plugin の活用
 - イメージボード(画面設計)からの実装
   - 画面レイアウト
-- novelgamesystemの実装
+- novelgamesystem の実装
   - rex ui を利用した構築
-- sizer  の使いかたまとめ
+- sizer の使いかたまとめ
 - 動画を組み込んだゲームの例
 
-- ExamplesのGamesの参考
+- Examples の Games の参考
 
 - ソースコード公開中のゲーム紹介
   - `大型巨人の肩の上に乗れ！`

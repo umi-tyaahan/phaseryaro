@@ -4,6 +4,7 @@ export EditOnRepo from './EditOnRepo';
 export Header from './Header';
 export Layout from './Layout';
 export Link from './Link';
+export LinkCard2 from './LinkCard2';
 export MdxComponents from './MdxComponents';
 export * from './Navigation';
 export PreviousNext from './PreviousNext';

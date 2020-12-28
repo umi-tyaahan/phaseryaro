@@ -11,6 +11,7 @@ title: '演出全般'
 
 - 自作のゲームへの実装方法について検討
 - Phaser Exampleにある演出項目の分類
+- mothiongraphicsについての調査 / Animation Effects
 
 # エフェクト対象
 
