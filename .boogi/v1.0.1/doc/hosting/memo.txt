@@ -1,0 +1,5 @@
+## 自動ビルド無しで直上げする場合
+firebase deploy --only hosting
+
+
+
