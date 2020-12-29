@@ -2,17 +2,17 @@
 title: "Phaser3.50リリース！"
 ---
 
-2020/12/15 に Phaser3.5 がリリースされました！  
+2020/12/15 に Phaser3.50 がリリースされました！  
 https://phaser.io/news/2020/12/phaser-350-released
 
-3.2 系から一気に Version が上がり、ものすごい数の機能追加と修正が行われたようです。  
+3.2X 系から一気に Version が上がり、ものすごい数の機能追加と修正が行われたようです。  
 公式は、今回の変更内容のトピックで数ヶ月に渡り、いくつか技術的記事を Up していくようです。
 
 ニュースのトピックをを見ていきます。
 
 # 主な更新内容
 
-- Example の 3.5 対応メンテナンス
+- Example の 3.50 対応メンテナンス
   - 公式ページ内の[PhaserExamples](http://phaser.io/examples)の全面メンテナンス
   - ラボの方の[Examples](http://labs.phaser.io/)の全面メンテナンス
     - こっちはテストできる方です
@@ -44,7 +44,7 @@ https://phaser.io/news/2020/12/phaser-350-released
 
 # その他
 
-3.5 対応チュートリアル動画がおすすめされていました。  
+3.50 対応チュートリアル動画がおすすめされていました。  
 この方は無料本も出しているみたいです。こいつも調査しないと:triumph:
 
 https://www.youtube.com/watch?v=3Q5jP85PXrE
