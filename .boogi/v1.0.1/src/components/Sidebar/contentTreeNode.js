@@ -39,8 +39,8 @@ const ContentLink = styled(({ className, link, children }) => (
   border-radius: 1px;
 `;
 
-const NodeContent = styled(({ className, text, link, children }) => (
-  <li className={className}>
+const NodeContent = styled(({ className, text, link, children, collapse }) => (
+  <li className={className} onClick={collapse}>
     {text && <ContentLink link={link}>{text}</ContentLink>}
     {children}
   </li>
@@ -129,19 +129,29 @@ const ContentTreeNode = ({ className, toggle, collapsed, url, title, location, c
   const text = emoji.emojify(title);
   return (
     <>
-      <NodeContent
-        text={text}
-        link={url}
-        className={className}
-        css={active ? activeNode(theme) : ''}
-      >
-        {title && hasChildren ? (
-          <>
-            <NodeCollapseButton isCollapsed={isCollapsed} collapse={collapse} />
-          </>
-        ) : null}
-      </NodeContent>
+      {title && hasChildren ? (
+        <NodeContent
+          text={text}
+          link={url}
+          className={className}
+          css={active ? activeNode(theme) : ''}
+          collapse={collapse}
+        >
+          <NodeCollapseButton isCollapsed={isCollapsed} collapse={collapse} />
+        </NodeContent>
+      ) :
+        (
+          <NodeContent
+            text={text}
+            link={url}
+            className={className}
+            css={active ? activeNode(theme) : ''}
+            collapse={null}
+          >
 
+          </NodeContent>
+        )
+      }
       {!isCollapsed ? (
         <NestedContentTreeNode collapsed={collapsed} location={location} setCollapsed={toggle}>
           {children}

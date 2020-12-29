@@ -7,11 +7,11 @@ import emoji from '../../utils/emoji';
 const ContentTreeGroup = styled(({ className, treeState, title, icon, location, children }) => {
   children.forEach((item) => {
     const alreadyExpanded = treeState.collapsed[item.url] === false;
-    const expanded =
+    let expanded =
       alreadyExpanded ||
-      location.pathname === item.url ||
-      location.pathname === item.url + '/' ||
-      item.children.some((child) => child.url === location.pathname) ||
+      (!treeState.collapsed[item.url] && location.pathname === item.url) ||
+      (!treeState.collapsed[item.url] && location.pathname === item.url + '/') ||
+      // item.children.some((child) => child.url === location.pathname) ||
       (config.sidebar.expanded && config.sidebar.expanded.includes(item.url));
 
     treeState.collapsed[item.url] = !expanded;
