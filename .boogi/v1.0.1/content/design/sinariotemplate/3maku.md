@@ -1,6 +1,6 @@
 ---
 title: "ハリウッド式構成:hammer_and_pick:"
-order: 50
+order: 10
 ---
 
 :hammer_and_pick:

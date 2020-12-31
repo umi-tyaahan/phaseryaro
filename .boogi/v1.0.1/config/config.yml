@@ -1,20 +1,20 @@
 metadata:
-  name: 'PhaserYaro!'
+  name: "PhaserYaro!"
   short_name: phaseryaro
-  description: 'ゲーム開発フレームワークPhaserでの、ゲームを制作に関わる情報をまとめたサイトです。マルチプラットフォーム対応のHTML5ゲームを作ります。'
+  description: "ゲーム開発フレームワークPhaserでの、ゲームを制作に関わる情報をまとめたサイトです。マルチプラットフォーム対応のHTML5ゲームを作ります。"
   language: ja
-  url: 'https://phaseryaro.app.dev'
+  url: "https://phaseryaro.app.dev"
   pathPrefix: /
   gaTrackingId: G-8DE6GCWPFG
   favicon: /assets/logo.svg
-  themeColor: '#0066cc'
+  themeColor: "#0066cc"
   siteImage: /assets/logo.png
 header:
   enabled: true
   logo: /assets/logo.png
   logoLink: "/"
   links:
-    - text: 'Phaserでのゲーム制作に関わる情報をまとめたサイトです'
+    - text: "Phaserでのゲーム制作に関わる情報をまとめたサイトです"
       link: text
 sidebar:
   ignoreIndex: false
@@ -51,7 +51,10 @@ sidebar:
       link: https://photonstorm.github.io/phaser3-docs/
     - text: Boogi
       link: https://boogi.netlify.app/
-  poweredBy: {}
+  poweredBy:
+    trademark: "/assets/gatsby.png"
+    name: GatsbyJS
+    link: https://www.gatsbyjs.org
   enabled: true
 pwa:
   enabled: false
@@ -62,7 +65,7 @@ pwa:
 features:
   editOnRepo:
     editable: false
-    location: 'http://localhost'
+    location: "http://localhost"
     type: github
   pageProgress:
     enabled: false
@@ -96,7 +99,7 @@ features:
   rss:
     enabled: false
 social:
-  github: 'https://github.com/umi-tyaahan'
-  twitter: 'https://twitter.com/umityaahan'
+  github: "https://github.com/umi-tyaahan"
+  twitter: "https://twitter.com/umityaahan"
 search:
   enabled: false

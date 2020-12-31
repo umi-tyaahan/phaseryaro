@@ -83,7 +83,11 @@ module.exports = {
                 "link": "https://boogi.netlify.app/"
             }
         ],
-        "poweredBy": {}
+        "poweredBy": {
+            "trademark": "/assets/gatsby.png",
+            "name": "GatsbyJS",
+            "link": "https://www.gatsbyjs.org"
+        }
     },
     "pwa": {
         "enabled": false,
