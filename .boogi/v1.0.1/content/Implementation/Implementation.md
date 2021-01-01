@@ -24,3 +24,23 @@ order: 1
 
 - ソースコード公開中のゲーム紹介
   - `大型巨人の肩の上に乗れ！`
+
+## 記事
+
+UI についての考え方
+https://limesode.hatenablog.com/entry/2018/02/02/010701
+
+UI 参考資料
+https://gameui.matme.info/blog/
+
+スクラッチの実装
+https://blog.ourcade.co/posts/2020/phaser-3-object-reveal-scratch-off-blendmode-erase/
+
+水平無限スクロール
+https://www.emanueleferonato.com/2019/08/10/the-basics-of-infinite-terrain-generation-for-a-horizontal-endless-runner/
+
+有限状態マシン
+https://www.mkelly.me/blog/phaser-finite-state-machine/
+
+Achievements
+https://github.com/rexrainbow/phaser3-rex-notes/blob/master/examples/achievements/achievements.js

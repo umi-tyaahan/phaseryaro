@@ -12,8 +12,6 @@ Phaser では、アセットが全く無いため、ゲーム素材を集める�
 今は無料・有料のアセットを入手できる場所も多いです。
 
 - 自分で作る
-  - ツールの紹介(texturepacker,freetexturepacker)
-  - web 公開の場合細かいファイルを沢山ロードすると失敗する恐れがあるため、packing すると良い
 - 素材の探し方
 - 画像
 - 音楽(BGM/ジングル)
@@ -21,4 +19,36 @@ Phaser では、アセットが全く無いため、ゲーム素材を集める�
     - 若干不安
 - 国内/海外
 - ボタンサイズの最小は 44px
+
   - apple の公式指針
+
+## テクスチャーのパッキング
+
+:hammer_and_pick:
+
+ゲームロード時に大量の Asset を個別にユーザーにダウンロードさせると失敗することがあります。
+(Phaser のローダーにリトライがないせい？:hammer_and_pick:)
+そのため、ある程度開発が進んだら texture packer を利用するのが良いでしょう。
+
+無料
+http://free-tex-packer.com/
+
+- png の圧縮用 api key 取って入れておくとかなり強力に圧縮されます
+
+要チェック
+
+- 日本語ファイル名だとバグる可能性あり
+- packer 内にトップディレクトリを作ってその中にファイルを入れないとプロジェクトが保存できないことがある
+
+有料
+
+texture-packer
+
+- かなり有名で様々なプラットフォームで利用されている
+- 便利
+
+## ベクターツールの練習
+
+- https://note.com/hanasakuno/n/nb39c8ac75776
+- ヘリコプターを作る
+  - https://2dgameartguru.com/creating-apache-helicopter-in-inkscape/
