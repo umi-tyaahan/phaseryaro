@@ -10,8 +10,7 @@ title: "演出全般"
 (作成中):hammer_and_pick:
 
 - 自作のゲームへの実装方法について検討
-- Phaser Example にある演出項目の分類
-- mothiongraphics についての調査 / Animation Effects
+- motiongraphics についての調査 / Animation Effects
   - https://developers.cyberagent.co.jp/blog/archives/14815/
   - https://vook.vc/n/1545
 - イージングの活用(具体例)

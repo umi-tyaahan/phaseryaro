@@ -1,16 +1,17 @@
 ---
-title: '画面へのマスク演出全般:hammer_and_pick:'
+title: "画面へのマスク演出全般:hammer_and_pick:"
 order: 4
 showToc: true
 tocDepth: 3
 ---
 
 マスク効果は、何かを覆い隠して必要な場所だけを描写する演出。  
-単純には円や長方形で画面領域をマスクする…というイメージだが、
+単純には円や長方形で画面領域をマスクする…というイメージだが、  
 実際にはアルファ付き画像を用いた複雑な形状で画面領域へマスクを行えるので、想像以上に応用が効く。
 
 - 画面全体へのマスク効果
 - 非描画領域を利用した演出
+
   - 爆発オチなんてサイテー！
   - 物語調の画面枠演出
   - 回想シーン
@@ -18,5 +19,8 @@ tocDepth: 3
   - スポットライト
   - 暗闇でのスポットライト演出
 
-Display / Masks / Camera Mask
+- 参考マスク(GMS2)
 
+  - https://qiita.com/2dgames_jp/items/3534aa6f77fcc933798c
+
+Display / Masks / Camera Mask

@@ -22,6 +22,26 @@ Phaser では、アセットが全く無いため、ゲーム素材を集める�
 
   - apple の公式指針
 
+## ツール
+
+- Tiled
+
+  - https://www.mapeditor.org/
+  - 日本語情報
+  - https://1-notes.com/phaser3-create-tile-map-with-tiled/
+
+- ワールドマップ
+
+  - https://inkarnate.com/
+
+- スプライトエフェクト:hammer_and_pick:
+
+  - https://effekseer.github.io/jp/index.html
+
+- パーティクル:hammer_and_pick:
+  - https://neutrinoparticles.com/en/
+  - https://neutrinoparticles.gitlab.io/neutrinoparticles.phaser-doc/master/
+
 ## テクスチャーのパッキング
 
 :hammer_and_pick:
@@ -30,7 +50,8 @@ Phaser では、アセットが全く無いため、ゲーム素材を集める�
 (Phaser のローダーにリトライがないせい？:hammer_and_pick:)
 そのため、ある程度開発が進んだら texture packer を利用するのが良いでしょう。
 
-無料
+### 無料版
+
 http://free-tex-packer.com/
 
 - png の圧縮用 api key 取って入れておくとかなり強力に圧縮されます
@@ -40,7 +61,10 @@ http://free-tex-packer.com/
 - 日本語ファイル名だとバグる可能性あり
 - packer 内にトップディレクトリを作ってその中にファイルを入れないとプロジェクトが保存できないことがある
 
-有料
+- オンライン版
+  - https://www.leshylabs.com/apps/sstool/
+
+### 有料版
 
 texture-packer
 

@@ -24,6 +24,12 @@ order: 1
 
 - ソースコード公開中のゲーム紹介
   - `大型巨人の肩の上に乗れ！`
+  - TS テンプレートと結構な数のサンプルゲーム
+    - https://github.com/digitsensitive/phaser3-typescript/
+  - TS テンプレートといくつかのゲーム / マ ○ オランド
+    - https://github.com/digitsensitive/phaser3-typescript/
+  - ポケモン風チュートリアル
+    - https://medium.com/@michaelwesthadley/modular-game-worlds-in-phaser-3-tilemaps-1-958fc7e6bbd6
 
 ## 記事
 

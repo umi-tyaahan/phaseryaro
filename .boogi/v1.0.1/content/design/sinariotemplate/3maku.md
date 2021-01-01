@@ -10,6 +10,11 @@ order: 10
 
 https://www.amazon.co.jp/dp/B0776P5DX8/
 
+- 解説(古い)
+  - https://yokoline.hatenablog.com/entry/2014/08/09/174717
+
+# 断片
+
 - 1 幕
   - フック
   - キャラクター紹介
