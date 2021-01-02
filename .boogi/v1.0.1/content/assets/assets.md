@@ -18,9 +18,17 @@ Phaser では、アセットが全く無いため、ゲーム素材を集める�
   - Audiosprite 構築
     - 若干不安
 - 国内/海外
+
+# ゲーム UI
+
 - ボタンサイズの最小は 44px
 
   - apple の公式指針
+
+参考
+https://hanasaqutto.com/3060/design/how-to-make-a-game-ui-design/
+https://gameanimation.info/archives/1277
+https://gameui.matme.info/blog/
 
 ## ツール
 
@@ -39,8 +47,12 @@ Phaser では、アセットが全く無いため、ゲーム素材を集める�
   - https://effekseer.github.io/jp/index.html
 
 - パーティクル:hammer_and_pick:
+
   - https://neutrinoparticles.com/en/
   - https://neutrinoparticles.gitlab.io/neutrinoparticles.phaser-doc/master/
+
+- ui
+  - https://hanasaqutto.com/3060/design/how-to-make-a-game-ui-design/
 
 ## テクスチャーのパッキング
 

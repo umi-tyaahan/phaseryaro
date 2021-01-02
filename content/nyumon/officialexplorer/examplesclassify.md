@@ -24,11 +24,11 @@ tocDepth: 3
 - Game Config / Game 全般の設定項目
 - Game Objects / :hammer_and_pick:
 - Games / 実際のゲームサンプル
-- Geom / 幾何学的な図形データの活用 :hammer_and_pick:
+- Geom / 幾何学的な図形データの活用
 - Input / :hammer_and_pick:
 - Loader / 様々なデータの Load を行う :hammer_and_pick:
 - Math / 距離計算のユーティリティ
-- Paths / :hammer_and_pick:
+- Paths / GameObject の複雑な移動
 - Physics / :hammer_and_pick:
 - Plugins / プラグインの利用方法
 - Pools / Group を利用した弾幕 GameObject の再利用例
@@ -57,6 +57,7 @@ tocDepth: 3
 ## 中級
 
 - Actions / 沢山のゲームオブジェクトの整列・配置
+- Paths / GameObject の複雑な移動
 
 ## 上級
 

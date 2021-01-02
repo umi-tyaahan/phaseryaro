@@ -29,14 +29,14 @@ margin-top: 15px;
 }
 `;
 
-export default ({ children, width, height, src}) => {
+export default ({ children, width, height, src }) => {
   const theme = useTheme();
   const imgWidth = width ? width : '50%';
-  const imgHeight = width ? width : '50%';
+  const imgHeight = height ? height : '50%';
   return (
-      <ImageCard width={imgWidth} height={imgHeight}>
-        <Image src={src} />
-        <Text>{children}</Text>
-      </ImageCard>
+    <ImageCard width={imgWidth} height={imgHeight}>
+      <Image src={src} />
+      <Text>{children}</Text>
+    </ImageCard>
   );
 };

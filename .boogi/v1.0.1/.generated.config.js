@@ -146,8 +146,8 @@ module.exports = {
             "depth": 3
         },
         "previousNext": {
-            "enabled": true,
-            "arrowKeyNavigation": true
+            "enabled": false,
+            "arrowKeyNavigation": false
         },
         "scrollTop": true,
         "showMetadata": true,
