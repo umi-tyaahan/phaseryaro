@@ -2,7 +2,7 @@ module.exports = {
     "metadata": {
         "name": "PhaserYaro!",
         "short_name": "phaseryaro",
-        "description": "ゲーム開発フレームワークPhaserでの、ゲーム製作に関わる情報をまとめたサイトです。主にゲーム演出と実装についてまとめています。",
+        "description": "ゲーム開発フレームワークPhaserでの、ゲーム製作情報をまとめたサイトです。主にゲーム演出と実装についてまとめています。",
         "language": "ja",
         "url": "https://phaseryaro.app.dev",
         "pathPrefix": "/",
@@ -17,7 +17,7 @@ module.exports = {
         "helpUrl": "",
         "links": [
             {
-                "text": "Phaserでのゲーム製作に関わる情報をまとめたサイト",
+                "text": "Phaserでのゲーム製作情報をまとめたサイト",
                 "link": "text"
             }
         ],

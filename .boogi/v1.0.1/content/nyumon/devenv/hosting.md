@@ -83,7 +83,7 @@ game.js
 http://fanblogs.jp/tabirpglab/archive/206/0
 
 <Info>
-無料プランの場合は、PublicリポジトリじゃないとGitHubPagesは利用できません:hammer_and_pick:
+無料プランの場合は、PublicリポジトリじゃないとGitHubPagesは利用できません
 </Info>
 
 # firebase で公開
