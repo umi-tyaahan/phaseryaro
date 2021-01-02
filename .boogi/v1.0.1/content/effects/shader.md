@@ -1,9 +1,15 @@
 ---
 title: "シェーダー:hammer_and_pick:"
-order: 20
+order: 30
 showToc: true
 tocDepth: 4
 ---
+
+:hammer_and_pick:
+
+記事を移植
+https://zenn.dev/tyaahan/articles/ffd64e543d171e
+https://zenn.dev/tyaahan/articles/46f8a9f71a24544dc965
 
 - glsl 調査
 
@@ -24,7 +30,7 @@ tocDepth: 4
 
 ## GamemakerStudio の例
 
-Phaser 用に再構築してみる
+Phaser で試してみる
 
 - シェーダー例
 

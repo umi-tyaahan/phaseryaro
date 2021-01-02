@@ -46,8 +46,8 @@ Phaser では、アセットが全く無いため、ゲーム素材を集める�
 
 :hammer_and_pick:
 
-ゲームロード時に大量の Asset を個別にユーザーにダウンロードさせると失敗することがあります。
-(Phaser のローダーにリトライがないせい？:hammer_and_pick:)
+ゲームロード時に大量の Asset を個別にユーザーにダウンロードさせると失敗することがあります。  
+(Phaser のローダーにリトライがないせい？:hammer_and_pick:)  
 そのため、ある程度開発が進んだら texture packer を利用するのが良いでしょう。
 
 ### 無料版
@@ -63,13 +63,15 @@ http://free-tex-packer.com/
 
 - オンライン版
   - https://www.leshylabs.com/apps/sstool/
+  - 管理人は使ったことないです
 
 ### 有料版
 
-texture-packer
+https://www.codeandweb.com/texturepacker
 
 - かなり有名で様々なプラットフォームで利用されている
-- 便利
+- 使いやすくて便利
+- 体験版あります
 
 ## ベクターツールの練習
 

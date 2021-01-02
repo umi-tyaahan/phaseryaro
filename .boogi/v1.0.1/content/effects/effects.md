@@ -1,5 +1,8 @@
 ---
 title: "演出全般"
+order: 1
+showToc: true
+tocDepth: 3
 ---
 
 ゲームでカッコいい演出をやりたい！

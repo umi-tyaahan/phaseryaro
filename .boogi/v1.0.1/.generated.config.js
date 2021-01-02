@@ -2,7 +2,7 @@ module.exports = {
     "metadata": {
         "name": "PhaserYaro!",
         "short_name": "phaseryaro",
-        "description": "ゲーム開発フレームワークPhaserでの、ゲームを制作に関わる情報をまとめたサイトです。マルチプラットフォーム対応のHTML5ゲームを作ります。",
+        "description": "ゲーム開発フレームワークPhaserでの、ゲーム製作に関わる情報をまとめたサイトです。主にゲーム演出と実装についてまとめています。",
         "language": "ja",
         "url": "https://phaseryaro.app.dev",
         "pathPrefix": "/",
@@ -17,7 +17,7 @@ module.exports = {
         "helpUrl": "",
         "links": [
             {
-                "text": "Phaserでのゲーム制作に関わる情報をまとめたサイトです",
+                "text": "Phaserでのゲーム製作に関わる情報をまとめたサイト",
                 "link": "text"
             }
         ],
@@ -69,14 +69,6 @@ module.exports = {
             {
                 "text": "Phaser",
                 "link": "https://phaser.io/"
-            },
-            {
-                "text": "Examples",
-                "link": "https://labs.phaser.io/"
-            },
-            {
-                "text": "API Documents",
-                "link": "https://photonstorm.github.io/phaser3-docs/"
             },
             {
                 "text": "Boogi",

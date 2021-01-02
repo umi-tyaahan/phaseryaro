@@ -1,7 +1,7 @@
 metadata:
   name: "PhaserYaro!"
   short_name: phaseryaro
-  description: "ゲーム開発フレームワークPhaserでの、ゲームを制作に関わる情報をまとめたサイトです。マルチプラットフォーム対応のHTML5ゲームを作ります。"
+  description: "ゲーム開発フレームワークPhaserでの、ゲーム製作に関わる情報をまとめたサイトです。主にゲーム演出と実装についてまとめています。"
   language: ja
   url: "https://phaseryaro.app.dev"
   pathPrefix: /
@@ -14,7 +14,7 @@ header:
   logo: /assets/logo.png
   logoLink: "/"
   links:
-    - text: "Phaserでのゲーム制作に関わる情報をまとめたサイトです"
+    - text: "Phaserでのゲーム製作に関わる情報をまとめたサイト"
       link: text
 sidebar:
   ignoreIndex: false
@@ -45,10 +45,10 @@ sidebar:
   links:
     - text: Phaser
       link: https://phaser.io/
-    - text: Examples
-      link: https://labs.phaser.io/
-    - text: API Documents
-      link: https://photonstorm.github.io/phaser3-docs/
+    # - text: Examples
+    #   link: https://labs.phaser.io/
+    # - text: API Documents
+    #   link: https://photonstorm.github.io/phaser3-docs/
     - text: Boogi
       link: https://boogi.netlify.app/
   poweredBy:
