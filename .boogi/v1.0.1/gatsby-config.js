@@ -66,7 +66,7 @@ const plugins = [
   //     include: /\.mdx?$/i, // Only .md files
   //   },
   // },
-  'gatsby-plugin-feed-mdx',
+  // 'gatsby-plugin-feed-mdx',
   {
     resolve: 'gatsby-plugin-mdx',
     options: {
