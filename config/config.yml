@@ -101,5 +101,6 @@ features:
 social:
   github: "https://github.com/umi-tyaahan"
   twitter: "https://twitter.com/umityaahan"
+  authorTwitterAccount: "UmiTyaahan"
 search:
   enabled: false

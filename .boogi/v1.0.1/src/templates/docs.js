@@ -119,7 +119,6 @@ export default class MDXRuntimeTest extends React.Component {
       site: {
         siteMetadata: { docsLocation, docsLocationType, editable },
       },
-      gitBranch,
     } = data;
 
     // meta tags
@@ -132,52 +131,31 @@ export default class MDXRuntimeTest extends React.Component {
         <PageTitle>
           <TitleWrapper>
             <Title>{docTitle}</Title>
-            {docsLocation && ((editable && mdx.frontmatter.editable !== false) || mdx.frontmatter.editable === true) ? (
-              <EditOnRepo
-                location={docsLocation}
-                branch={gitBranch.name}
-                path={mdx.parent.relativePath}
-                repoType={docsLocationType}
-              />
+          </TitleWrapper>
+          {(config.features.showMetadata === true && mdx.frontmatter.showMetadata !== false) ||
+            mdx.frontmatter.showMetadata === true ? (
+              <div css={{ display: 'block' }}>
+                <LastUpdated
+                  time={mdx.parent.modifiedTime}
+                  name="管理人"
+                />
+              </div>
             ) : (
               ''
             )}
-          </TitleWrapper>
-          {(config.features.showMetadata === true && mdx.frontmatter.showMetadata !== false) ||
-          mdx.frontmatter.showMetadata === true ? (
-            <div css={{ display: 'block' }}>
-              {mdx.parent.fields ? (
-                <LastUpdated
-                  // time={mdx.parent.fields.gitLogLatestDate}
-                  time={mdx.parent.modifiedTime}
-                  // name={mdx.parent.fields.gitLogLatestAuthorName}
-                  name="管理人"
-                  email={mdx.parent.fields.gitLogLatestAuthorEmail}
-                />
-              ) : (
-                <LastUpdated
-                  time={mdx.parent.modifiedTime}
-                  name="管理人"
-                />
-              )}
-              {/* <ReadingTime time={mdx.timeToRead * 2} /> */}
-            </div>
-          ) : (
-            ''
-          )}
         </PageTitle>
         <ContentWrapper>
           <MDXRenderer>{mdx.body}</MDXRenderer>
         </ContentWrapper>
         {(config.features.previousNext.enabled === true &&
           mdx.frontmatter.showPreviousNext !== false) ||
-        mdx.frontmatter.showPreviousNext ? (
-          <div css={{ padding: '30px 0' }}>
-            <PreviousNext mdx={mdx} />
-          </div>
-        ) : (
-          ''
-        )}
+          mdx.frontmatter.showPreviousNext ? (
+            <div css={{ padding: '30px 0' }}>
+              <PreviousNext mdx={mdx} />
+            </div>
+          ) : (
+            ''
+          )}
       </Layout>
     );
   }
@@ -205,11 +183,6 @@ export const pageQuery = graphql`
       parent {
         ... on File {
           relativePath
-          fields {
-            gitLogLatestAuthorName
-            gitLogLatestAuthorEmail
-            gitLogLatestDate(fromNow: true)
-          }
           modifiedTime(formatString: "YYYY/MM/DD")
         }
       }
@@ -220,13 +193,6 @@ export const pageQuery = graphql`
         showPreviousNext
         showToc
       }
-    }
-    gitBranch {
-      name
-    }
-    gitCommit(latest: { eq: true }) {
-      hash
-      date(formatString: "YYYY-MM-DD hh:mm")
     }
   }
 `;

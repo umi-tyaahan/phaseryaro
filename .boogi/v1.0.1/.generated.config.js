@@ -105,7 +105,8 @@ module.exports = {
         "slack": "",
         "twich": "",
         "twitter": "https://twitter.com/umityaahan",
-        "youtube": ""
+        "youtube": "",
+        "authorTwitterAccount": "UmiTyaahan"
     },
     "features": {
         "editOnRepo": {

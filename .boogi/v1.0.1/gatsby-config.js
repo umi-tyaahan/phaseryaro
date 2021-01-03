@@ -52,7 +52,7 @@ const plugins = [
     },
   },
   'gatsby-plugin-react-helmet',
-  'gatsby-source-local-git',
+  // 'gatsby-source-local-git',
   {
     resolve: 'gatsby-source-filesystem',
     options: {
@@ -60,12 +60,13 @@ const plugins = [
       path: `${__dirname}/content/`,
     },
   },
-  {
-    resolve: `gatsby-transformer-gitinfo`,
-    options: {
-      include: /\.mdx?$/i, // Only .md files
-    },
-  },
+  // {
+  //   resolve: `gatsby-transformer-gitinfo`,
+  //   options: {
+  //     include: /\.mdx?$/i, // Only .md files
+  //   },
+  // },
+  'gatsby-plugin-feed-mdx',
   {
     resolve: 'gatsby-plugin-mdx',
     options: {
@@ -94,7 +95,7 @@ const plugins = [
           resolve: 'gatsby-remark-images',
           options: {
             maxWidth: 1050,
-            linkImagesToOriginal:false,
+            linkImagesToOriginal: false,
             quality: 75,
             showCaptions: false,
             disableBgImageOnAlpha: true,
@@ -157,115 +158,115 @@ const plugins = [
   },
 ];
 
-if (config.features.pageProgress && config.features.pageProgress.enabled) {
-  plugins.push({
-    resolve: 'gatsby-plugin-page-progress',
-    options: {
-      includePaths: config.features.pageProgress.includePaths,
-      excludePaths: config.features.pageProgress.excludePaths,
-      height: config.features.pageProgress.height,
-      prependToBody: config.features.pageProgress.prependToBody,
-      color: config.features.pageProgress.color,
-    },
-  });
-}
+// if (config.features.pageProgress && config.features.pageProgress.enabled) {
+//   plugins.push({
+//     resolve: 'gatsby-plugin-page-progress',
+//     options: {
+//       includePaths: config.features.pageProgress.includePaths,
+//       excludePaths: config.features.pageProgress.excludePaths,
+//       height: config.features.pageProgress.height,
+//       prependToBody: config.features.pageProgress.prependToBody,
+//       color: config.features.pageProgress.color,
+//     },
+//   });
+// }
 
-if (config.features.rss && config.features.rss.enabled) {
-  plugins.push({
-    resolve: `gatsby-plugin-feed`,
-    options: {
-      ...config.features.rss,
-      language: config.metadata.language,
-      query: `
-        {
-          site {
-            siteMetadata {
-              title
-              description
-              siteUrl
-              site_url: siteUrl
-            }
-          }
-        }
-      `,
-      feeds: [
-        {
-          serialize: ({ query: { site, allMdx } }) => {
-            const items = allMdx.edges.map((edge) => {
-              const frontmatter = edge.node.frontmatter;
-              const fields = edge.node.parent.fields;
-              const rawTitle =
-                frontmatter.metaTitle && frontmatter.metaTitle.length > 0
-                  ? frontmatter.metaTitle
-                  : frontmatter.title;
-              const title = emoji.clean(rawTitle);
-              const date = fields && fields.gitLogLatestDate ? fields.gitLogLatestDate : new Date();
-              const author =
-                fields && fields.gitLogLatestAuthorName ? fields.gitLogLatestAuthorName : 'unknown';
-              return {
-                title: title,
-                description: frontmatter.description ? frontmatter.description : edge.node.excerpt,
-                date: date,
-                url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                author: author,
-              };
-            });
-            return _.orderBy(items, ['date', 'title'], ['desc', 'asc']);
-          },
-          query: `
-          {
-            allMdx(filter: {fields: {draft: {ne: true}}}) {
-              edges {
-                node {
-                  excerpt
-                  fields {
-                    slug
-                  }
-                  parent {
-                    ... on File {
-                      fields {
-                        gitLogLatestDate
-                        gitLogLatestAuthorName
-                      }
-                    }
-                  }
-                  frontmatter {
-                    title
-                    metaTitle
-                    description
-                  }
-                }
-              }
-            }
-          }
-          `,
-          output: config.features.rss.outputPath,
-          match: config.features.rss.matchRegex,
-          title: config.features.rss.title ? config.features.rss.title : config.metadata.title,
-        },
-      ],
-    },
-  });
-}
+// if (config.features.rss && config.features.rss.enabled) {
+//   plugins.push({
+//     resolve: `gatsby-plugin-feed`,
+//     options: {
+//       ...config.features.rss,
+//       language: config.metadata.language,
+//       query: `
+//         {
+//           site {
+//             siteMetadata {
+//               title
+//               description
+//               siteUrl
+//               site_url: siteUrl
+//             }
+//           }
+//         }
+//       `,
+//       feeds: [
+//         {
+//           serialize: ({ query: { site, allMdx } }) => {
+//             const items = allMdx.edges.map((edge) => {
+//               const frontmatter = edge.node.frontmatter;
+//               const fields = edge.node.parent.fields;
+//               const rawTitle =
+//                 frontmatter.metaTitle && frontmatter.metaTitle.length > 0
+//                   ? frontmatter.metaTitle
+//                   : frontmatter.title;
+//               const title = emoji.clean(rawTitle);
+//               const date = fields && fields.gitLogLatestDate ? fields.gitLogLatestDate : new Date();
+//               const author =
+//                 fields && fields.gitLogLatestAuthorName ? fields.gitLogLatestAuthorName : 'unknown';
+//               return {
+//                 title: title,
+//                 description: frontmatter.description ? frontmatter.description : edge.node.excerpt,
+//                 date: date,
+//                 url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+//                 author: author,
+//               };
+//             });
+//             return _.orderBy(items, ['date', 'title'], ['desc', 'asc']);
+//           },
+//           query: `
+//           {
+//             allMdx(filter: {fields: {draft: {ne: true}}}) {
+//               edges {
+//                 node {
+//                   excerpt
+//                   fields {
+//                     slug
+//                   }
+//                   parent {
+//                     ... on File {
+//                       fields {
+//                         gitLogLatestDate
+//                         gitLogLatestAuthorName
+//                       }
+//                     }
+//                   }
+//                   frontmatter {
+//                     title
+//                     metaTitle
+//                     description
+//                   }
+//                 }
+//               }
+//             }
+//           }
+//           `,
+//           output: config.features.rss.outputPath,
+//           match: config.features.rss.matchRegex,
+//           title: config.features.rss.title ? config.features.rss.title : config.metadata.title,
+//         },
+//       ],
+//     },
+//   });
+// }
 
 const searchPlugins = getSearchPlugins(config.features.search);
 searchPlugins.forEach(plugin => plugins.push(plugin));
 
 // check and add pwa functionality
-if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
-  plugins.push({
-    resolve: `gatsby-plugin-manifest`,
-    options: { ...config.pwa.manifest },
-  });
-  plugins.push({
-    resolve: 'gatsby-plugin-offline',
-    options: {
-      appendScript: require.resolve(`./src/custom-sw-code.js`),
-    },
-  });
-} else {
-  plugins.push('gatsby-plugin-remove-serviceworker');
-}
+// if (config.pwa && config.pwa.enabled && config.pwa.manifest) {
+//   plugins.push({
+//     resolve: `gatsby-plugin-manifest`,
+//     options: { ...config.pwa.manifest },
+//   });
+//   plugins.push({
+//     resolve: 'gatsby-plugin-offline',
+//     options: {
+//       appendScript: require.resolve(`./src/custom-sw-code.js`),
+//     },
+//   });
+// } else {
+//   plugins.push('gatsby-plugin-remove-serviceworker');
+// }
 
 module.exports = {
   pathPrefix: config.metadata.pathPrefix,
