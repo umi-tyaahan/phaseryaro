@@ -7,7 +7,7 @@ module.exports = {
         "url": "https://phaseryaro.app.dev",
         "pathPrefix": "/",
         "gaTrackingId": "G-8DE6GCWPFG",
-        "siteImage": "/assets/logo.png",
+        "siteImage": "https://p-games.web.app/assets/logo.png",
         "favicon": "/assets/logo.svg",
         "themeColor": "#0066cc"
     },
