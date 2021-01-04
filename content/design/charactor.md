@@ -1,6 +1,6 @@
 ---
 title: "キャラクター設計:hammer_and_pick:"
-order: 20
+order: 42
 ---
 
 :hammer_and_pick:

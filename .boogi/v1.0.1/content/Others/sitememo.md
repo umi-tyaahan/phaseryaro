@@ -11,7 +11,9 @@ order: 10
 - Gatsby
   - starter : Boogi
   - メンテナンスがかなり必要：辛い
-  - todo : LinkCard 実装
+- todo
+  - LinkCard 実装
+  - webm 埋め込み
 
 # hosting
 
