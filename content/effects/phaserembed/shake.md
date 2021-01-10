@@ -1,51 +1,44 @@
 ---
-title: "フラッシュ"
-order: 2
+title: "シェイク"
+order: 3
 showToc: true
 tocDepth: 3
 ---
 
-![flash](/assets/flash.gif)
+![shake](/assets/shake.gif)
 
-ここではフラッシュの実装方法について記載します。  
-フラッシュは指定色に素早く変化し、変化した色がすぐにフェードする効果です。
+ここではシェイクの実装方法について記載します。  
+シェイクは、対象を揺らします。
 
-<Info>
-強い白色フラッシュは、ゲームプレイヤーにストレスとなります。
+主に何か衝突するような演出で利用します。  
+ガトリングガンの発射時にキャラクターを揺らすなどして、ユーザーへのフィードバック表現で効果的に利用すると、  
+演出がより「ジューシー」になるようです。:hammer_and_pick:
 
-フラッシュ効果を利用する場合は加減が必要でしょう。:hammer_and_pick:
-</Info>
-
-# 画面全体のフラッシュ
+# 画面全体のシェイク
 
 Camera クラスで実現します。
 
 - 公式の Examples
-  - http://labs.phaser.io/edit.html?src=src\camera\flash.js
-  - クリックすると、フラッシュし、ロゴを表示し、終了するとロゴが消えます。
+  - http://labs.phaser.io/view.html?src=src/camera/shake.js
+  - クリックすると、画面全体が激しくシェイクします。
 - Document
-  - https://photonstorm.github.io/phaser3-docs/Phaser.Cameras.Scene2D.Camera.html#flash__anchor
+  - https://photonstorm.github.io/phaser3-docs/Phaser.Cameras.Scene2D.Camera.html#shake__anchor
 
 メインコード
 
 ```js
-this.cameras.main.flash();
+this.cameras.main.shake(2000);
 ```
 
-# その他のフラッシュ
+# その他のシェイク
 
 - 一つの画像(GameObject)
 
-  - 画像を直接フラッシュさせる API は無いです
-    - Camera の Flash と ignore を組み合わせれば間接的に実現可能ですが、実践的な設計ではないです
-  - Rex さんの記事ではグロー後処理フィルターを利用しています
-    - https://rexrainbow.github.io/phaser3-rex-notes/docs/site/shader-glowfilter/
-  - 3.50 で PostFX として追加されている？:hammer_and_pick:
-
-- 横スクロールアクションのダメージ演出
-  - ダメージを受けたらプレイヤーキャラクターが数回点滅するアレ
-  - Tween を利用して、白色で TintFill 、Tint 取り消しを繰り返します
-  - フェード的な中間色演出はできません
+  - 画像を直接シェイクさせる API は無いです
+    - Camera の Shake と ignore を組み合わせれば間接的に実現可能ですが、実践的な設計ではないです
+  - Rex さんが専用の Shake プラグインを作成したようです。管理人も公開しているゲームではこちらを使っています。
+    - https://rexrainbow.github.io/phaser3-rex-notes/docs/site/shake-position/
+  - tween の x 振動と yoyo を利用した簡単な実装例
 
 メインコード
 
@@ -86,20 +79,21 @@ function create() {
   let badButton = this.add.image(650, 300, 'bad').setScale(1.5, 1.5).setInteractive();
   let lifeBarMask = createLifeBar(this);
 
+  // this.cameras.main.shake(2000);
+
   badButton.on('pointerdown', () => {
 
-    //オブジェクトフラッシュ
+    //オブジェクトシェイク
     this.tweens.add({
       targets: img1,
-      duration: 100,
+      duration: 66,
       scope: img1,
-      onLoop: () => {
-        img1.isTinted ? img1.clearTint() : img1.setTintFill(0xffffff);
-      },
-      loop: 4,
+      yoyo: true,
+      repeat: 8,
+      x: { from: img1.x + 10, to: img1.x - 10 },
       onComplete: () => {
         //演出完了後にライフゲージを減らす
-        lifeBarMask.x -= 4;
+        lifeBarMask.x -= 20;
       },
     });
 
@@ -143,7 +137,8 @@ window.addEventListener('load', () => {
 });
 
 
+
 ```
 
-- 特定の Scene のみフラッシュ
-  - シーン内で`this.cameras.main.flash`をすれば OK です
+- 特定の Scene のみシェイク
+  - シーン内で`this.cameras.main.shake`をすれば OK です

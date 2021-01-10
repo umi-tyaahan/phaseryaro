@@ -1,6 +1,6 @@
 ---
 title: "フラッシュ"
-order: 1
+order: 2
 showToc: true
 tocDepth: 3
 ---
@@ -146,4 +146,4 @@ window.addEventListener('load', () => {
 ```
 
 - 特定の Scene のみフラッシュ
-  - フェードさせたいシーン内で`this.cameras.main.flash`をすれば OK です
+  - シーン内で`this.cameras.main.flash`をすれば OK です
