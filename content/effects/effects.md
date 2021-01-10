@@ -12,6 +12,9 @@ tocDepth: 3
 
 (作成中):hammer_and_pick:
 
+エフェクトのジューシーさ！  
+https://www.youtube.com/watch?v=216_5nu4aVQ
+
 - 自作のゲームへの実装方法について検討
 - motiongraphics についての調査 / Animation Effects
   - https://developers.cyberagent.co.jp/blog/archives/14815/
