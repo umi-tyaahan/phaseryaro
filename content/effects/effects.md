@@ -24,6 +24,11 @@ https://www.youtube.com/watch?v=216_5nu4aVQ
 - トランジションとマスク
   - https://phaser.discourse.group/t/use-camera-mask-as-transition-at-start-of-scene/3571/2
 
+# ニュース
+
+- [Phaser3.50 の新機能](https://phaser.io/news/2020/12/phaser-350-released)。で PostFX 効果が使えるようになりました
+  - PostFX によりブラー、グローなどのよく使う画面効果がすぐに実装できそうです 😁
+
 # エフェクト対象
 
 :hammer_and_pick:
